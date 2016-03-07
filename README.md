@@ -9,9 +9,9 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 
 
 ## [Git Transport Overview](https://github.com/jonyeezs/gitcheat/wiki/Git-Transport-Overview)
----
+
 ## [Create](https://github.com/jonyeezs/gitcheat/wiki/Create)
----
+
 ## [Syncing](https://github.com/jonyeezs/gitcheat/wiki/Syncing)
 
 #### [Push](https://github.com/jonyeezs/gitcheat/wiki/Syncing#push)
@@ -19,7 +19,7 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 #### [Pull using Merge](https://github.com/jonyeezs/gitcheat/wiki/Syncing#pull-using-mergebranch)
 
 #### [Pull with rebase](https://github.com/jonyeezs/gitcheat/wiki/Syncing#pull-with-rebase)
----
+
 ## [Branching](https://github.com/jonyeezs/gitcheat/wiki/Branching)
 
 #### [Link a new local branch to existing remote branch](https://github.com/jonyeezs/gitcheat/wiki/Branching#link-a-new-local-branch-to-existing-remote-branch)
@@ -29,7 +29,7 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 #### [Switch to a branch](https://github.com/jonyeezs/gitcheat/wiki/Branching#switch-to-a-branch)
 
 #### [Delete](https://github.com/jonyeezs/gitcheat/wiki/Branching#delete)
----
+
 ## [Stashing](https://github.com/jonyeezs/gitcheat/wiki/Stashing)
 
 #### [Saving](https://github.com/jonyeezs/gitcheat/wiki/Stashing#saving)\
@@ -37,4 +37,3 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 #### [Show diffs](https://github.com/jonyeezs/gitcheat/wiki/Stashing#show-diffs)
 
 #### [Pop, Drop, like it's hot](https://github.com/jonyeezs/gitcheat/wiki/Stashing#pop-drop-like-its-hot)
----
