@@ -32,7 +32,7 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 
 ## [Stashing](https://github.com/jonyeezs/gitcheat/wiki/Stashing)
 
-#### [Saving](https://github.com/jonyeezs/gitcheat/wiki/Stashing#saving)\
+#### [Saving](https://github.com/jonyeezs/gitcheat/wiki/Stashing#saving)
 
 #### [Show diffs](https://github.com/jonyeezs/gitcheat/wiki/Stashing#show-diffs)
 
