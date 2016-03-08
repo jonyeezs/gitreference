@@ -75,3 +75,5 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 #### [Show tag information, commits, description, etc](https://github.com/jonyeezs/gitcheat/wiki/Tag#show-tag-information-commits-description-etc)
 
 #### [Checkout to a tag](https://github.com/jonyeezs/gitcheat/wiki/Tag#checkout-to-a-tag)
+
+## Bisect [link](https://github.com/jonyeezs/gitcheat/wiki/Bisect)
