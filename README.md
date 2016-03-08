@@ -30,6 +30,8 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 
 #### [Delete](https://github.com/jonyeezs/gitcheat/wiki/Branching#delete)
 
+#### [Show all completely merged branches with current branch](https://github.com/jonyeezs/gitcheat/wiki/Branching#show-all-completely-merged-branches-with-current-branch)
+
 ## [Stashing](https://github.com/jonyeezs/gitcheat/wiki/Stashing)
 
 #### [Saving](https://github.com/jonyeezs/gitcheat/wiki/Stashing#saving)
@@ -37,3 +39,7 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 #### [Show diffs](https://github.com/jonyeezs/gitcheat/wiki/Stashing#show-diffs)
 
 #### [Pop, Drop, like it's hot](https://github.com/jonyeezs/gitcheat/wiki/Stashing#pop-drop-like-its-hot)
+
+## Commit Management
+
+####
