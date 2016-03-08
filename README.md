@@ -53,3 +53,13 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 #### [Delete commit by reset](https://github.com/jonyeezs/gitcheat/wiki/Commit-Management#delete-commit-by-reset)
 
 #### [Clear untracked files](https://github.com/jonyeezs/gitcheat/wiki/Commit-Management#clear-untracked-files)
+
+## Log
+
+#### [Find logs with filter](https://github.com/jonyeezs/gitcheat/wiki/Log#find-logs-with-filter)
+
+#### [Find all commits for a file](https://github.com/jonyeezs/gitcheat/wiki/Log#find-all-commits-for-a-file)
+
+#### [Show files involved in the commit](https://github.com/jonyeezs/gitcheat/wiki/Log#show-files-involved-in-the-commit)
+
+#### [Show all commits of a range](https://github.com/jonyeezs/gitcheat/wiki/Log#show-all-commits-of-a-range)
