@@ -63,3 +63,17 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 #### [Show files involved in the commit](https://github.com/jonyeezs/gitcheat/wiki/Log#show-files-involved-in-the-commit)
 
 #### [Show all commits of a range](https://github.com/jonyeezs/gitcheat/wiki/Log#show-all-commits-of-a-range)
+
+## Tag
+
+#### [Tag latest commit](https://github.com/jonyeezs/gitcheat/wiki/Tag#tag-latest-commit)
+
+#### [Push tags only to remote](https://github.com/jonyeezs/gitcheat/wiki/Tag#push-tags-only-to-remote)
+
+#### [List tags](https://github.com/jonyeezs/gitcheat/wiki/Tag#list-tags)
+
+#### [List tags and its commit hash](https://github.com/jonyeezs/gitcheat/wiki/Tag#list-tags-and-its-commit-hash)
+
+#### [Show tag information, commits, description, etc](https://github.com/jonyeezs/gitcheat/wiki/Tag#show-tag-information-commits-description-etc)
+
+#### [Checkout to a tag](https://github.com/jonyeezs/gitcheat/wiki/Tag#checkout-to-a-tag)
