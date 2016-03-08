@@ -8,11 +8,11 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 ## [Common conventions in this Cheatsheet](https://github.com/jonyeezs/gitcheat/wiki#common-conventions-in-this-cheatsheet)
 
 
-## [Git Transport Overview](https://github.com/jonyeezs/gitcheat/wiki/Git-Transport-Overview)
+## Git Transport Overview [link](https://github.com/jonyeezs/gitcheat/wiki/Git-Transport-Overview)
 
-## [Create](https://github.com/jonyeezs/gitcheat/wiki/Create)
+## Create [link](https://github.com/jonyeezs/gitcheat/wiki/Create)
 
-## [Syncing](https://github.com/jonyeezs/gitcheat/wiki/Syncing)
+## Syncing
 
 #### [Push](https://github.com/jonyeezs/gitcheat/wiki/Syncing#push)
 
@@ -20,7 +20,7 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 
 #### [Pull with rebase](https://github.com/jonyeezs/gitcheat/wiki/Syncing#pull-with-rebase)
 
-## [Branching](https://github.com/jonyeezs/gitcheat/wiki/Branching)
+## Branching
 
 #### [Link a new local branch to existing remote branch](https://github.com/jonyeezs/gitcheat/wiki/Branching#link-a-new-local-branch-to-existing-remote-branch)
 
