@@ -32,7 +32,7 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 
 #### [Show all completely merged branches with current branch](https://github.com/jonyeezs/gitcheat/wiki/Branching#show-all-completely-merged-branches-with-current-branch)
 
-## [Stashing](https://github.com/jonyeezs/gitcheat/wiki/Stashing)
+## Stashing
 
 #### [Saving](https://github.com/jonyeezs/gitcheat/wiki/Stashing#saving)
 
