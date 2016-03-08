@@ -42,7 +42,7 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 
 ## Commit Management
 
-#### [View details of commits](https://github.com/jonyeezs/gitcheat/wiki/Commit-Management#view-details-of-commits)
+#### [View details of commits in local repo](https://github.com/jonyeezs/gitcheat/wiki/Commit-Management#view-details-of-commits)
 
 #### [Unstage files that can't be reset](https://github.com/jonyeezs/gitcheat/wiki/Commit-Management#unstage-files-that-cant-be-reset)
 
