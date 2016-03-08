@@ -76,4 +76,4 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 
 #### [Checkout to a tag](https://github.com/jonyeezs/gitcheat/wiki/Tag#checkout-to-a-tag)
 
-## Bisect [link](https://github.com/jonyeezs/gitcheat/wiki/Bisect)
+## How to Bisect [link](https://github.com/jonyeezs/gitcheat/wiki/Bisect)
