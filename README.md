@@ -17,7 +17,7 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
  * [Merge branches](https://github.com/jonyeezs/gitcheat/wiki/Branching#merge-branches)
  * [Switch to a branch](https://github.com/jonyeezs/gitcheat/wiki/Branching#switch-to-a-branch)
  * [Delete](https://github.com/jonyeezs/gitcheat/wiki/Branching#delete)
- * [Show all completely merged branches with current branch](https://github.com/jonyeezs/gitcheat/wiki/Branching#show-all-completely-merged-branches-with-current-branch)
+ * [Show all completely merged branches in current branch](https://github.com/jonyeezs/gitcheat/wiki/Branching#show-all-completely-merged-branches-with-current-branch)
 6. Stashing
  * [Saving](https://github.com/jonyeezs/gitcheat/wiki/Stashing#saving)
  * [Show diffs](https://github.com/jonyeezs/gitcheat/wiki/Stashing#show-diffs)
