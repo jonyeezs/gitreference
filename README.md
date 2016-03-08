@@ -66,9 +66,7 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 
 ## Tag
 
-#### [Tag latest commit](https://github.com/jonyeezs/gitcheat/wiki/Tag#tag-latest-commit)
-
-#### [Push tags only to remote](https://github.com/jonyeezs/gitcheat/wiki/Tag#push-tags-only-to-remote)
+#### [Create a tag](https://github.com/jonyeezs/gitcheat/wiki/Tag#tag-latest-commit)
 
 #### [List tags](https://github.com/jonyeezs/gitcheat/wiki/Tag#list-tags)
 
