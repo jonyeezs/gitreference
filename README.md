@@ -42,4 +42,14 @@ _Disclaimer: images are taken from other sites that i find very useful. Look at 
 
 ## Commit Management
 
-####
+#### [View details of commits](https://github.com/jonyeezs/gitcheat/wiki/Commit-Management#view-details-of-commits)
+
+#### [Unstage files that can't be reset](https://github.com/jonyeezs/gitcheat/wiki/Commit-Management#unstage-files-that-cant-be-reset)
+
+#### [Revert a commit that's already in remote](https://github.com/jonyeezs/gitcheat/wiki/Commit-Management#revert-a-commit-thats-already-in-remote)
+
+#### [Reset commits to staging without affecting any current changes in the workspace](https://github.com/jonyeezs/gitcheat/wiki/Commit-Management#reset-commits-to-staging-without-affecting-any-current-changes-in-the-workspace)
+
+#### [Delete commit by reset](https://github.com/jonyeezs/gitcheat/wiki/Commit-Management#delete-commit-by-reset)
+
+#### [Clear untracked files](https://github.com/jonyeezs/gitcheat/wiki/Commit-Management#clear-untracked-files)
