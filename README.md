@@ -1,4 +1,4 @@
-Jonathan's Git Cheatsheet
+Jonathan's Git Reference Guide
 ======
 
 _Disclaimer: images are taken from other sites that i find very useful. Look at [references.md](https://github.com/jonyeezs/gitcheat/blob/master/images/references.md) in the image folder for the citations._
