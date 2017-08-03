@@ -1,0 +1,11 @@
+# Site settings
+title: Git Reference Guide
+
+# Build settings
+markdown: kramdown
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+exclude:
+  - Gemfile
+  - Gemfile.lock
