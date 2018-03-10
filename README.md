@@ -1,9 +1,18 @@
-Jonathan's Git Reference Guide
+# Jonathan's Git Reference
 ======
 
 _Disclaimer: images are taken from other sites that i find very useful. Look at [references.md](https://github.com/jonyeezs/gitcheat/blob/master/images/references.md) in the image folder for the citations._
 
 Check out the wiki for the [actual reference document](https://github.com/jonyeezs/gitcheat/wiki)
+
+## Developement
+
+Uses [Jekyll](https://jekyllrb.com/docs/installation/).
+
+```bash
+bundle install
+JEKYLL_ENV=preview bundle exec jekyll serve
+```
 
 =======
 
