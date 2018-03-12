@@ -2,6 +2,7 @@
 layout: page
 title: Tagging
 excerpt: What and how to Tag
+permalink: /tag-commit
 order: 12
 ---
 
