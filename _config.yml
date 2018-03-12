@@ -7,6 +7,24 @@ baseurl: "/gitreference"
 # Build settings
 markdown: kramdown
 
+# Collections
+collections_dir: collections
+collections:
+    syncing:
+        output: true
+    branching:
+        output: true
+    stashing:
+        output: true
+    addcommit:
+        output: true
+    viewcommit:
+        output: true
+    deletecommit:
+        output: true
+    resetcommit:
+        output: true
+    
 # Exclude from processing.
 # The following items will not be processed, by default.
 exclude:

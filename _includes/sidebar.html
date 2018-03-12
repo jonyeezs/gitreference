@@ -1,0 +1,21 @@
+<amp-sidebar id="header-sidebar" class="ampstart-sidebar px3" layout="nodisplay">
+  <div class="flex justify-start items-center ampstart-sidebar-header">
+    <div role="button" aria-label="close sidebar" on="tap:header-sidebar.toggle" tabindex="0" class="ampstart-navbar-trigger items-start">✕</div>
+  </div>
+  <nav class="ampstart-sidebar-nav ampstart-nav">
+    <ul class="list-reset m0 p0 ampstart-label">
+        {% assign sorted_pages = site.pages | sort:"order" %}
+        {% for entry in sorted_pages %}
+            {% if entry.url == current_page %}
+                {% assign current = 'current' %}
+            {% else %}
+                {% assign current = null %}
+            {% endif %}
+            <li class="ampstart-nav-item ampstart-nav-dropdown relative {{ current }}">
+                <a href="{{ site.baseurl }}{{ entry.url }}" class="text-decoration-none" title="{{ entry.excerpt }}">
+                    {{ entry.title | default: "Home" }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+</amp-sidebar>
