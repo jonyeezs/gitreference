@@ -1,5 +1,8 @@
 # Site settings
-title: Git Reference Guide
+title: Git Reference
+description: A reference of tasty tips, getting out of a git pickle and overcoming the road-blocks
+favicon: "/assets/images/favicon.ico"
+baseurl: "/gitreference"
 
 # Build settings
 markdown: kramdown
