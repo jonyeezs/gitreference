@@ -4,7 +4,7 @@
   </div>
   <nav class="ampstart-sidebar-nav ampstart-nav">
     <ul class="list-reset m0 p0 ampstart-label">
-        {% assign sorted_pages = site.pages | sort:"order" %}
+        {% assign sorted_pages = site.html_pages | sort:"order" %}
         {% for entry in sorted_pages %}
             {% if entry.url == current_page %}
                 {% assign current = 'current' %}

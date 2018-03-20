@@ -7,24 +7,21 @@
 
 <body>
   <!-- HEADER -->
-  <div id="header_wrap" class="outer">
-    <header class="inner">
-      {% include header.html %}
-    </header>
+  <div class="header-wrap">
+    {% include header.html %}
   </div>
 
+  <!-- Start Sidebar -->
+  {% include sidebar.html %}
+
   <!-- MAIN CONTENT -->
-  <div id="main_content_wrap" class="outer">
-    <section id="main_content" class="inner">
-      {{ content }}
-    </section>
+  <div class="main-wrap">
+    {{ content }}
   </div>
 
   <!-- FOOTER  -->
-  <div id="footer_wrap" class="outer">
-    <footer class="inner">
+  <div class="footer_wrap">
       {% include footer.html %}
-    </footer>
   </div>
 </body>
 </html>
