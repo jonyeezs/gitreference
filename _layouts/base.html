@@ -11,17 +11,16 @@
     {% include header.html %}
   </div>
 
-  <!-- Start Sidebar -->
-  {% include sidebar.html %}
 
-  <!-- MAIN CONTENT -->
   <div class="main-wrap">
+    <!-- Start Sidebar -->
+    {% include sidebar.html %}
+    
+    <!-- MAIN CONTENT -->
     {{ content }}
   </div>
 
   <!-- FOOTER  -->
-  <div class="footer_wrap">
-      {% include footer.html %}
-  </div>
+  {% include footer.html %}
 </body>
 </html>

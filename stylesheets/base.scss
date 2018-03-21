@@ -2,30 +2,43 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 # only Main files contain this front matter, not partials.
 ---
-
 @import "bourbon/bourbon";
+@import "neat/neat";
 
 $rs: 16px;
+$content-width: 980px;
 
 $font-serif: Georgia,Cambria,"Times New Roman",Times,'Lora', serif;
 $font-sans: "Helvetica Neue", 'Open Sans', Arial, Helvetica, sans-serif;
+
+$article-layout-grid: (
+  columns: 1,
+  gutter: $rs,
+);
+
+$article-layout-grid--wide: (
+  columns: 8,
+  gutter: 2rem,
+  media: '(min-width: #{$content-width})',
+);
 
 @mixin respond-to($breakpoint) {
   @media only screen and (max-width: $breakpoint + px) {
     @content;
   }
 }
-
 header {
-  font-size: 1.5em;
-
-  .inline-block {
-      display: inline;
-  }
-  
-  .header-title {
-      margin-left: 5%;
-  }
+    &.headerbar {
+        height: 50px;
+        top: 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    .site-name {
+        flex: 1;
+        text-align: center;
+    }
 }
 
 main {
@@ -46,23 +59,43 @@ body {
   font-feature-settings: "liga", "dlig";
 }
 
-.site-header {
-  position: relative;
-  width: 100%;
-  max-width: 700px;
-  margin: 16px auto 0 auto;
-  box-sizing: border-box;
-  @include respond-to(800) {
-    padding: 0 $rs * 1;
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.main-wrap {
+  @include grid-container;
+  max-width: 1631px;
+}
+
+.sidebar {
+  @include grid-column(1, $article-layout-grid);
+  @media only screen and (max-width: $content-width) {
+    display: none;
+  }
+  
+  @include grid-media($article-layout-grid--wide) {
+    @include grid-column(2);
+  }
+
+  height: 100vh;
+  
+  .fixed {
+      position: fixed;
   }
 }
 
 .content {
-  width: 100%;
-  max-width: 700px;
-  margin: 25px auto 0 auto;
+  @include grid-column(1, $article-layout-grid);
+
+  @include grid-media($article-layout-grid--wide) {
+      @include grid-column(4);
+  }
+  
   box-sizing: border-box;
-  @include respond-to(800) {
+  
+  @include respond-to(800px) {
     padding: 0 $rs * 1;
   }
 
@@ -109,50 +142,6 @@ body {
       }
     }
   }
-}
-
-.post-template .content {
-  max-width: 700px;
-}
-
-.post {
-  .post-meta {
-    font-family: $font-sans;
-  }
-  .post-title {
-    font-weight: 700;
-    font-style: normal;
-    letter-spacing: -0.04em;
-    font-size: 50px;
-    line-height: 1.1;
-    color: #333332;
-    margin-bottom: 50px;
-  }
-  .author-image {
-    background-image: url({{ site.baseurl }}{{site.author_image}});
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    line-height: 30px;
-    margin-right: 8px;
-    margin-bottom: -10px;
-    float: left;
-    background-size: cover;
-    border-radius: 100%;
-    text-indent: -9999px;
-  }
-  .post-meta-text {
-    color: #b3b3b1;
-    letter-spacing: -0.02em;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 14px;
-    overflow: hidden;
-    font-family: $font-sans;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-
   .post-content {
     width: 100%;
     font-family: $font-serif;
@@ -268,4 +257,35 @@ body {
       list-style-type: decimal;
     }
   }
+}
+
+.footer {
+    background-color: #212121;
+    text-align: center;
+    padding: 1px;
+    
+    .copyright {
+     font-size: 16px;
+     color: #b0acac;
+     margin: 4px;
+    }
+    
+    .red {
+        color: red;
+    }
+    
+    .blue {
+        color: blue;
+    }
+    
+    .font-sized-image {
+        display: inline-block;
+        height: 15px;
+        width: auto;
+    }
+    
+    a {
+        color: #F2F2F2;
+        text-decoration: none;
+    }
 }
