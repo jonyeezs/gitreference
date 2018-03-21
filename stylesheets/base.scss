@@ -256,6 +256,10 @@ img {
     ol li {
       list-style-type: decimal;
     }
+    
+    pre {
+        overflow: auto;
+    }
   }
 }
 
