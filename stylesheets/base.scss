@@ -98,6 +98,7 @@ img {
 
 .sidebar {
   @include grid-column(1, $article-layout-grid);
+  
   @media only screen and (max-width: $content-width) {
     display: none;
   }
@@ -105,6 +106,9 @@ img {
   @include grid-media($article-layout-grid--wide) {
     @include grid-column(2);
   }
+
+  margin-left: 1rem!important;
+  margin-right: 1rem!important;
 }
 
 .content {
