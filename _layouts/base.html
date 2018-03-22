@@ -7,12 +7,12 @@
 
 <body>
   <!-- HEADER -->
-  <div class="header-wrap">
+  <div class="header-flex">
     {% include header.html %}
   </div>
 
 
-  <div class="main-wrap">
+  <div class="main-flex main-grid">
     <!-- Start Sidebar -->
     {% include sidebar.html %}
     
@@ -21,6 +21,8 @@
   </div>
 
   <!-- FOOTER  -->
-  {% include footer.html %}
+  <div class="footer-flex">
+    {% include footer.html %}
+  </div>
 </body>
 </html>

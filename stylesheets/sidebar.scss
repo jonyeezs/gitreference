@@ -1,0 +1,31 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+.stick-it {
+    height: 100vh;
+    overflow-y: auto;
+    position: sticky;
+    top: 20px;
+}
+
+.sidebar {
+    ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    li:not(:first-child) {
+        margin-top: 10px;
+    }
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.text-content {
+    font-size: 1.4vw;
+    text-align: left;
+    text-transform: uppercase;
+}
