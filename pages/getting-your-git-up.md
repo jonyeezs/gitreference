@@ -2,7 +2,7 @@
 layout: page
 title: Getting Started With Your Git
 excerpt: Here's a guide on how to setup your workstation's git environment
-permalink: /getting-your-git-up
+permalink: /getting-started
 order: 3
 ---
 
