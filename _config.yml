@@ -16,7 +16,6 @@ sass:
   sass_dir: _sass
   
 # Collections
-collections_dir: collections
 collections:
     syncing:
         output: true
