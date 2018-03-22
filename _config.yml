@@ -39,4 +39,4 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - README.md
-  - images/references.md
+  - assets/images/references.md
