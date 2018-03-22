@@ -1,0 +1,315 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+@import "bourbon/bourbon";
+@import "neat/neat";
+
+$rs: 16px;
+$content-width: 980px;
+
+$font-serif: Georgia,Cambria,"Times New Roman",Times,'Lora', serif;
+$font-sans: "Helvetica Neue", 'Open Sans', Arial, Helvetica, sans-serif;
+$title-size: 36px;
+
+$article-layout-grid: (
+  columns: 1,
+  gutter: $rs,
+);
+
+$article-layout-grid--wide: (
+  columns: 8,
+  gutter: 2rem,
+  media: '(min-width: #{$content-width})',
+);
+
+@mixin respond-to($breakpoint) {
+  @media only screen and (max-width: $breakpoint + px) {
+    @content;
+  }
+}
+
+body {
+    background-color: #fff;
+    font-family: $font-sans;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig";
+}
+
+.header-flex {
+    order: 1;
+    flex-grow: 1;
+    align-self: flex-end;
+    width: 100%;
+}
+
+.main-flex {
+    order: 2;
+    flex-grow: 2;
+}
+
+.footer-flex {
+    order: 3;
+    flex-grow: 1;
+    align-self: flex-end;
+    width: 100%;
+}
+
+header {
+    &.headerbar {
+        height: 50px;
+        top: 0;
+        width: 100%;
+        align-items: center;
+    }
+    .site-name {
+        text-align: center;
+        line-height: 18px;
+        font-size: $title-size - 10px;
+        letter-spacing: 0;
+        font-weight: 700;
+        color: rgba(0,0,0,.68);
+    }
+}
+
+main {
+  display: block;
+}
+
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.main-grid {
+  @include grid-container;
+  max-width: 1631px;
+}
+
+.sidebar {
+  @include grid-column(1, $article-layout-grid);
+  @media only screen and (max-width: $content-width) {
+    display: none;
+  }
+  
+  @include grid-media($article-layout-grid--wide) {
+    @include grid-column(2);
+  }
+}
+
+.content {
+  @include grid-column(1, $article-layout-grid);
+
+  @include grid-media($article-layout-grid--wide) {
+      @include grid-column(4);
+  }
+  
+  box-sizing: border-box;
+  
+  @include respond-to(800px) {
+    padding: 0 $rs * 1;
+  }
+
+  article {
+    padding: 20px 0;
+    border-bottom: 1px solid #f2f2f0;
+    &:last-child {
+      border-bottom: 0px;
+    }
+    .post-title {
+      letter-spacing: -0.02em;
+      font-weight: 700;
+      font-style: normal;
+      display: block;
+      font-size: $title-size;
+      line-height: 1.15;
+      margin: 0 0;
+      a {
+        text-decoration: none;
+        color: #333332;
+        &:hover {
+          text-decoration: none;
+        }
+      }
+    }
+    .post-excerpt {
+      letter-spacing: -0.02em;
+      font-weight: 300;
+      font-style: normal;
+      font-size: 20px;
+      line-height: 1.59;
+      color: #666665;
+    }
+    .post-meta {
+      font-size: 14px;
+      color: #b3b3b1;
+      line-height: 30px;
+      a {
+        color: #b3b3b1;
+        text-decoration: none;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+  .post-content {
+    width: 100%;
+    font-family: $font-serif;
+    color: #333333;
+    h1, h2, h3 {
+      font-family: $font-sans;
+    }
+    h3, h4, h5, h6 {
+      letter-spacing: -0.02em;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 24px;
+      line-height: 1.3;
+      margin-top: 50px;
+      margin-bottom: 0px;
+      font-family: $font-sans;
+    }
+    h3 {
+      font-size: 36px;
+    }
+    h2, h1 {
+      letter-spacing: -0.02em;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 42px;
+      line-height: 1.2;
+      margin-top: 50px;
+      margin-bottom: 0px;
+    }
+    table {
+      border-collapse: collapse;
+    }
+    table, th, td {
+      border: 1px solid black;
+      padding: 5px;
+      text-align:left;
+    }
+    p {
+      font-weight: 400;
+      font-style: normal;
+      font-size: 22px;
+      line-height: 1.59;
+      letter-spacing: -.002em;
+      margin-top: 30px;
+      margin-bottom: 0;
+      color: #333333;
+      -webkit-hyphens: auto;
+      -moz-hyphens: auto;
+      hyphens: auto;
+    }
+    a {
+      color: #333333;
+      text-decoration: underline;
+    }
+    amp-img, amp-youtube {
+      margin-top: 30px;
+    }
+    figure {
+      margin: 0;
+      padding: 0 0 30px;
+    }
+    figcaption {
+      font-weight: 400;
+      font-style: italic;
+      font-size: 16px;
+      line-height: 1.3;
+      color: #666665;
+      outline: 0;
+      z-index: 300;
+      text-align: center;
+    }
+    hr {
+      border: 0;
+      padding: 0;
+      display: block;
+      width: 15%;
+      margin: 30px auto;
+      border: 0px solid #dddddd;
+      border-top: 1px solid #dddddd;
+    }
+    blockquote {
+      margin: 0 0 30px;
+      margin-left: -26px;
+      border-left: 3px solid #57ad68;
+      padding-left: 20px;
+      p {
+        letter-spacing: 0.01rem;
+        font-weight: 400;
+        mborder-left: 3px solid #57ad68;
+        mpadding-left: 20px;
+        mmargin-left: -26px;
+        padding-bottom: 3px;
+      }
+    }
+    ul, ol {
+      padding: 0 0 30px;
+      margin: 0;
+    }
+    li {
+      padding: 0;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 23px;
+      line-height: 30px;
+      margin-left: 30px;
+      margin-bottom: 12px;
+      padding-top: 2px;
+      p {
+        padding: 0 0 golden-ratio(1rem, 1);
+      }
+    }
+    ol li {
+      list-style-type: decimal;
+    }
+    
+    pre {
+        overflow: auto;
+    }
+  }
+}
+
+.footer {
+    background: rgb(55,55,55);
+    text-align: center;
+    
+    .copyright {
+     font-size: 16px;
+     color: #b0acac;
+     padding: 4px;
+    }
+    
+    .red {
+        color: red;
+    }
+    
+    .blue {
+        color: blue;
+    }
+    
+    .font-sized-image {
+        display: inline-block;
+        height: 15px;
+        width: auto;
+    }
+    
+    a {
+        color: #F2F2F2;
+        text-decoration: none;
+    }
+}

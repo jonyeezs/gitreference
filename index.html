@@ -1,41 +1,8 @@
 ---
-layout: base
+layout: page
+category: landing
+order: 1
 ---
 
-<p><em>Disclaimer: images are taken from other sites that i find very useful. Look at <a href="https://github.com/jonyeezs/gitcheat/blob/master/images/references.md">references.md</a> in the image folder for the citations.</em></p>
-
-<p>Not much of a "<em>cheatsheet</em>" as there's more contents here than you'd wish for a chit.</p>
-
-<p>But this would be alot of scenarios that I encountered, and had to SO-ed it; so this is more like a compile of useful git things.</p>
-
-<h2>
-<a id="git-overview" class="anchor" href="#git-overview" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Git Overview</h2>
-
-<p>Here's a few links to understand concept of git better:</p>
-
-<ul>
-<li><a href="wiki">Wiki</a></li>
-<li><a href="wiki/git-transport-overview">git transport (or the different stages of git)</a></li>
-</ul>
-
-<h2>
-<a id="common-conventions" class="anchor" href="#common-conventions" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Common conventions</h2>
-
-<p><code>&lt;remote&gt;/&lt;branch&gt;</code> is the name of the remote branch. </p>
-
-<p>If you want to know what the naming convention of your branch is, type in <code>git branch -r</code>. You usually wouldn't need to type in origin/.... Just the remote branch name.</p>
-
-<p><code>origin</code> is an alias on your system for a particular remote repository. It's not actually a property of that repository.</p>
-
-<h2>
-<a id="some-cool-websites" class="anchor" href="#some-cool-websites" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Some Cool websites</h2>
-
-<p><a href="http://onlywei.github.io/explain-git-with-d3">Visualized git examples</a></p>
-
-<p><a href="https://github.com/reenhanced/gitreflow">Git Reflow - simplify your git process with easy commands</a></p>
-
-<p><a href="https://github.com/git-tips/tips#show-helpful-guides-that-come-with-git">Moar git tips</a></p>
-
-<p><a href="https://hackernoon.com/lesser-known-git-commands-151a1918a60#.iqyqz0w0p">Very very useful git alias</a>. I'm not even gonna copy this into my references because this is worthwhile looking on your own.</p>
-
-<p><a href="https://github.com/tj/git-extras">Git Extras - An extension to your Git commands</a></p>
+{% capture landing %}{% include landing-page.md %}{% endcapture %}
+{{ landing | markdownify }}

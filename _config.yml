@@ -1,9 +1,38 @@
 # Site settings
-title: Git Reference Guide
+title: Git Reference
+description: A reference of tasty tips, getting out of a git pickle and overcoming the road-blocks
+favicon: "/assets/images/favicon.ico"
+baseurl: "/gitreference"
 
 # Build settings
 markdown: kramdown
+kramdown:
+    input: GFM
 
+highlighter: rouge
+
+sass:
+  style: compressed # possible values: nested expanded compact compressed
+  sass_dir: _sass
+  
+# Collections
+collections_dir: collections
+collections:
+    syncing:
+        output: true
+    branching:
+        output: true
+    stashing:
+        output: true
+    addcommit:
+        output: true
+    viewcommit:
+        output: true
+    deletecommit:
+        output: true
+    resetcommit:
+        output: true
+    
 # Exclude from processing.
 # The following items will not be processed, by default.
 exclude:

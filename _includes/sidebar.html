@@ -1,0 +1,18 @@
+<aside class="sidebar stick-it">
+    <nav>
+        <ul>
+            {% assign sorted_pages = site.html_pages | sort:"order" %}
+            {% for entry in sorted_pages %}
+            {% if entry.url == current_page %}
+            {% assign current = 'current' %}
+            {% else %}
+            {% assign current = null %}
+            {% endif %}
+            <li class="{{ current }}">
+                <a href="{{ site.baseurl }}{{ entry.url }}" class="text-decoration-none" title="{{ entry.excerpt }}">
+                    {{ entry.title | default: "Home" }}</a>
+            </li>
+            {% endfor %}
+        </ul>
+    </nav>
+</aside>

@@ -1,0 +1,1 @@
+<p><em>Disclaimer: images are taken from other sites that i find very useful. Look at <a href="https://github.com/jonyeezs/gitcheat/blob/master/images/references.md">references.md</a> in the image folder for the citations.</em></p>

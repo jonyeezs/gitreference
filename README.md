@@ -11,7 +11,7 @@ Uses [Jekyll](https://jekyllrb.com/docs/installation/).
 
 ```bash
 bundle install
-JEKYLL_ENV=preview bundle exec jekyll serve
+bundle exec jekyll serve
 ```
 
 =======
