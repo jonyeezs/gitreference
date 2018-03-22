@@ -2,30 +2,78 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 # only Main files contain this front matter, not partials.
 ---
+
+$grey: #c4c4c4;
+
 .stick-it {
     height: 100vh;
-    overflow-y: auto;
     position: sticky;
     top: 20px;
+    z-index: -1;
 }
 
-.sidebar {
-    ul {
-        list-style: none;
-        padding: 0;
-    }
+.away-from-footer-10 {
+    margin-bottom: 10px;
+}
 
-    li:not(:first-child) {
-        margin-top: 10px;
+.scrollable {
+    overflow-y: auto;
+    visibility: hidden;
+    
+    &:hover,
+    &:focus {
+        visibility: visible;
+    }
+    
+    &-delayed {
+        transition: visibility .2s;
+        &:hover {
+            transition: visibility 0s .2s;
+            
+        }
     }
 }
 
-.text-decoration-none {
+.scrollbar {
+	&::-webkit-scrollbar {
+        width: 2px;
+        background-color: lighten($grey, 20%);
+    }
+    
+    &::-webkit-scrollbar-thumb {
+	    background-color: darken($grey, 18%);
+    }
+}
+
+.sidebar-nav {
+    visibility: visible;
+}
+
+ul.non-decorated-list {
+    list-style: none;
+    padding-left: 0;
+    
+    & > li {
+        background-color: #fff;
+        transition: background 0.5s linear;
+    }
+    
+    & > li:hover {
+        background-color: lighten($grey, 20%);
+    }
+}
+
+.list-item-container {
+    padding: 7px 5px;
+}
+
+.link-decoration-none {
     text-decoration: none;
 }
 
 .text-content {
-    font-size: 1.4vw;
+    font-size: 1.2vw;
+    color: darken($grey, 15%);
     text-align: left;
     text-transform: uppercase;
 }
