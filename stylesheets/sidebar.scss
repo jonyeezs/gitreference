@@ -54,13 +54,18 @@ ul.non-decorated-list {
     
     & > li {
         background-color: #fff;
-        transition: background 0.5s linear;
+        transition: background 1s ease-out;
     }
     
     & > li:hover {
         background-color: lighten($grey, 20%);
     }
+    
+    & > li.current {
+        background-color: lighten($grey, 10%)!important;
+    }
 }
+
 
 .list-item-container {
     padding: 7px 5px;
@@ -75,4 +80,8 @@ ul.non-decorated-list {
     color: darken($grey, 15%);
     text-align: left;
     text-transform: uppercase;
+    
+    &.current {
+        color: darken($grey, 30%)!important;
+    }
 }
