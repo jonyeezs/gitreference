@@ -38,3 +38,5 @@ collections:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - images/references.md
