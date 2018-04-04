@@ -1,22 +1,24 @@
-<aside class="stick-it scrollable scrollbar">
-    <nav class="sidebar-nav">
-        <ul class="non-decorated-list">
-            {% assign sorted_pages = site.html_pages | sort:"order" %}
-            {% for entry in sorted_pages %}
+<div class="sidebar-container expand-on-hover">
+    <aside class="stick-it scroll-container scrollable scrollbar">
+        <nav class="sidebar-nav">
+            <ul class="non-decorated-list">
+                {% assign sorted_pages = site.html_pages | sort:"order" %}
+                {% for entry in sorted_pages %}
                 {% if entry.url == page.url %}
-                    {% assign current = 'current' %} 
-                    {% else %} 
-                    {% assign current = null %} 
-                    {% endif %}
-                    <li class="{{ current }}">
-                        <a href="{{ site.baseurl }}{{ entry.url }}" title="{{ entry.excerpt }}" class="link-decoration-none">
-                            <div class="list-item-container">
-                                <span class="text-content {{ current }}">
-                                    {{ entry.title | default: "Home" }}</span>
+                {% assign current = 'current' %} 
+                {% else %} 
+                {% assign current = null %} 
+                {% endif %}
+                <li class="{{ current }}">
+                    <a href="{{ site.baseurl }}{{ entry.url }}" title="{{ entry.excerpt }}" class="link-decoration-none">
+                        <div class="list-item-container">
+                            <span class="text-content {{ current }}">
+                                {{ entry.title | default: "Home" }}</span>
                             </div>
                         </a>
                     </li>
-            {% endfor %}
-        </ul>
-    </nav>
-</aside>
+                    {% endfor %}
+                </ul>
+            </nav>
+        </aside>
+</div>
