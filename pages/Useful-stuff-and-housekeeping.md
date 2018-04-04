@@ -3,6 +3,7 @@ layout: page
 title: Useful stuff and housekeeping
 excerpt: Here to help you keep your repo clean and tidy and some other useful stuff
 permalink: /housekeeping
+include_sidebar: true
 order: 2
 ---
 

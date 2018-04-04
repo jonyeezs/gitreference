@@ -3,6 +3,7 @@ layout: page
 title: Troubleshooting buggy commits
 excerpt: How to use bisect to find broken commits
 permalink: /git-bisect
+include_sidebar: true
 order: 3
 ---
 
