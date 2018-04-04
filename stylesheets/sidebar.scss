@@ -63,7 +63,7 @@ ul.non-decorated-list {
     padding-left: 0;
     
     & > li {
-        background-color: #fff;
+        background-color: $background-color;
         transition: background 1s ease-out;
     }
     

@@ -3,6 +3,7 @@ layout: page
 title: Getting Started With Your Git
 excerpt: Here's a guide on how to setup your workstation's git environment
 permalink: /getting-started
+include_sidebar: true
 order: 3
 ---
 

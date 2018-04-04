@@ -1,0 +1,47 @@
+---
+# this ensures Jekyll reads the file to be transformed into CSS later
+# only Main files contain this front matter, not partials.
+---
+@import "variables";
+
+$search-font-size: $title-size - 15px;
+$search-margin: ($search-font-size - 10px) / 2;
+
+.rounded-input {
+    border: 1px solid lighten($grey, 10%);
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px lighten($grey, 70%);
+    font-size: $search-font-size;
+    margin: $search-margin auto;
+    padding: 4px;
+    outline: 0;
+    
+    &:focus {
+        border-color: darken($grey, 50%);
+    }
+}
+
+.search-result-container {
+    position: relative;
+}
+
+.search-results {
+    position: absolute;
+    right: 0;
+    text-align: left;
+    width: calc(100% + 10vw);
+    z-index: 999;
+    min-height: 50vh;
+    font-size: 1.2em;
+    
+    .search-result-item {
+        color: darken($grey, 15%)!important;
+        background-color: $background-color;
+        border-left: 4px solid $background-color;
+        transition: background 1s ease-out;
+        
+        &:hover {
+            background-color: lighten($grey, 20%)!important;
+        }
+    }
+}

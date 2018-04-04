@@ -1,9 +1,10 @@
 $rs: 16px;
 $content-width: 980px;
+$header-height: 50px;
 
 $font-serif: Georgia, Cambria, "Times New Roman", Times, 'Lora', serif;
 $font-sans: "Helvetica Neue", 'Open Sans', Arial, Helvetica, sans-serif;
-$title-size: 36px;
+$title-size: $header-height - 14px;
 
 $article-layout-grid: (
   columns: 1,
@@ -17,4 +18,5 @@ $article-layout-grid--wide: (
   media: '(min-width: #{$content-width})'
 );
 
+$background-color: #fff;
 $grey: #c4c4c4;

@@ -2,7 +2,7 @@
     <aside class="stick-it scroll-container scrollable scrollbar">
         <nav class="sidebar-nav">
             <ul class="non-decorated-list">
-                {% assign sorted_pages = site.html_pages | sort:"order" %}
+                {% assign sorted_pages = site.html_pages | where:"include_sidebar","true" | sort:"order" %}
                 {% for entry in sorted_pages %}
                 {% if entry.url == page.url %}
                 {% assign current = 'current' %} 

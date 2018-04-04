@@ -50,18 +50,37 @@ body {
 
 header {
     &.headerbar {
-        height: 50px;
-        top: 0;
+        height: $header-height;
         width: 100%;
-        align-items: center;
     }
+    &.container {
+        display: inline-block;
+    }
+    .middle {
+        @include grid-column(4, $article-layout-grid--wide);
+        @include grid-push(2, $article-layout-grid--wide);
+    }
+    .right {
+        @include grid-column(2, $article-layout-grid--wide);
+    }
+    
     .site-name {
+        display: inline-block;
+        vertical-align: middle;
         text-align: center;
         line-height: 18px;
         font-size: $title-size - 10px;
         letter-spacing: 0;
         font-weight: 700;
         color: rgba(0,0,0,.68);
+    }
+    
+    .searchbar {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        height: 100%;
+        position: fixed;
     }
 }
 
