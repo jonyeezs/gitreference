@@ -2,8 +2,18 @@
 # this ensures Jekyll reads the file to be transformed into CSS later
 # only Main files contain this front matter, not partials.
 ---
+@import "variables";
 
-$grey: #c4c4c4;
+.sidebar-container {
+    width: 80%;
+    @media only screen and (max-width: $content-width) {
+        box-sizing: border-box;
+    }
+    
+    @media only screen and (max-width: $content-width) {
+      display: none;
+    }
+}
 
 .stick-it {
     height: 100vh;
@@ -76,7 +86,7 @@ ul.non-decorated-list {
 }
 
 .text-content {
-    font-size: 1.2vw;
+    font-size: calc(1em - 20%);
     color: darken($grey, 15%);
     text-align: left;
     text-transform: uppercase;
