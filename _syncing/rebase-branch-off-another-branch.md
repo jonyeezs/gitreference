@@ -10,12 +10,16 @@ Only do this if you're the only one working on this branch. This will cause some
 Make sure the branch you wish to rebase off is up-to-date.
 
 ```
+git checkout <branchYouAreWorkingOn>
+git rebase <branchToRebaseOff>
+```
+
+If you're using git v2.0. There is a shortcut to rebase off the previous branch you were on.
+
+**-** indicates the previous branch.
+
+```
 git checkout <branchToRebaseOff>
-git pull origin <branchToRebaseOff>
-```
-
-Then checkout your branch and rebase your changes
-
-```
-git checkout <branchToRebaseOff> <branchYouAreWorkingOn>
+git checkout <branchYouAreWorkingOn>
+git rebase -
 ```
