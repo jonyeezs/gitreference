@@ -4,8 +4,10 @@ slug: push-with-different-branch-name.md
 ---
 # Push with different branch name
 
-```git push origin local-name:remote-name```
+```git push origin <local-name>:<remote-name>```
 
-Your local branch name doesn't really describe its intention. Too lazy to recreate another branch. Push your newly created local branch with a new name.
+Your local branch name doesn't really describe its intention. Push your newly created local branch with a new name.
 
-Because the names are different it can be confusing for your mental juggle, _you've been warned_.
+Then rename it because the names are different it can be confusing for your mental juggle.
+
+```git branch -m <remote-name>```
