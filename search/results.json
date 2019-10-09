@@ -1,29 +1,33 @@
 ---
 layout: null
 ---
+{% assign collectables = site.pages | where_exp: "collection", "collection != nil" %}
+{% assign has_add_collection = false %}
+{% assign singles = site.pages | where_exp: "collection", "collection == nil" | where_exp: "title", "title != nil" %}
+
+{% assign has_add_single = false %}
 [
-  {% for page in site.pages %}
-        {% if page.collection != nil %}
-            {% for post in site[page.collection] %}
-    {
+{% for page in collectables %}
+  {% for post in site[page.collection] %}
+    {% if forloop.first and has_add_collection %},{% endif %}
+    {% assign has_add_collection = true %}
+   {
         "title"    : "{{ post.title | escape }}",
         "category" : "{{ page.collection }}",
         "url"      : "{{ site.baseurl }}{{ page.permalink }}#{{ post.slug }}",
         "content"  : {{ post.content | strip_html | strip_newlines | escape | jsonify }}
     }{% unless forloop.last %},{% endunless %}
-            {% endfor %}
-        {% unless forloop.last %},{% endunless %}     
-        {% endif %}   
   {% endfor %}
-  {% for page in site.pages %}
-    {% if page.title != nil and page.collection == nil %}
-    {% unless forloop.last %},{% endunless %}  
+{% endfor %}
+{% for page in singles %}
+  {% if forloop.first and has_add_collection %},{% endif %}
+  {% unless forloop.first %}{%if has_add_single %},{% endif %}{% endunless %} 
     {
-        "title"    : "{{ page.title | escape }}",
-        "category" : "{{ page.collection }}",
-        "url"      : "{{ site.baseurl }}{{ page.permalink }}",
-        "content"  : {{ page.content | strip_html | strip_newlines | escape | jsonify }}
+        "title": "{{ page.title | escape }}",
+        "category": "{{ page.collection }}",
+        "url": "{{ site.baseurl }}{{ page.permalink }}",
+        "content": {{ page.content | strip_html | strip_newlines | escape | jsonify }}
     }
-    {% endif %}
-  {% endfor %}
+  {% assign has_add_single = true %}
+{% endfor %}  
 ]
