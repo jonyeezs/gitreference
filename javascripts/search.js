@@ -1,4 +1,4 @@
-var sjs = SimpleJekyllSearch({
+SimpleJekyllSearch({
   searchInput: document.getElementById('search-input'),
   resultsContainer: document.getElementById('results-container'),
   json: '/gitreference/search/results.json',
@@ -6,6 +6,7 @@ var sjs = SimpleJekyllSearch({
     <div class="search-result-item list-item-container">
         <a href="{url}" class="link-decoration-none">{title}</a>
     </div>`,
-  noResultsText: '<div class="search-result-item list-item-container">No results found.</div>',
-  fuzzy: true
+  noResultsText:
+    '<div class="search-result-item list-item-container">No results found.</div>',
+  fuzzy: true,
 });

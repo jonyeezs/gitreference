@@ -1,33 +1,31 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     {% include head.html %}
-</head>
+  </head>
 
-<body>
-  <!-- HEADER -->
-  <div class="header-flex">
-    {% include header.html %}
-  </div>
-
-
-  <div class="main-flex main-grid">
-    <!-- Start Sidebar -->
-    <div class="sidebar stick-it away-from-footer-10">
-        {% include sidebar.html %}
+  <body>
+    <!-- HEADER -->
+    <div class="header-flex">
+      {% include header.html %}
     </div>
-    
-    <!-- MAIN CONTENT -->
-    {{ content }}
-  </div>
 
-  <!-- FOOTER  -->
-  <div class="footer-flex">
-    {% include footer.html %}
-  </div>
-</body>
+    <div class="main-flex main-grid">
+      <!-- Start Sidebar -->
+      <div class="sidebar stick-it away-from-footer-10">
+        {% include sidebar.html %}
+      </div>
 
-<script src="https://cdn.rawgit.com/christian-fei/Simple-Jekyll-Search/master/dest/simple-jekyll-search.min.js"></script>
-<script src="{{ '/javascripts/search.js' | relative_url }}"></script>
+      <!-- MAIN CONTENT -->
+      {{ content }}
+    </div>
+
+    <!-- FOOTER  -->
+    <div class="footer-flex">
+      {% include footer.html %}
+    </div>
+  </body>
+
+  <script src="https://unpkg.com/simple-jekyll-search@1.7.2/dest/simple-jekyll-search.min.js"></script>
+  <script src="{{ '/javascripts/search.js' | relative_url }}"></script>
 </html>
