@@ -8,5 +8,5 @@ SimpleJekyllSearch({
     </div>`,
   noResultsText:
     '<div class="search-result-item list-item-container">No results found.</div>',
-  fuzzy: true,
+  fuzzy: false,
 });
