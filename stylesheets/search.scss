@@ -27,6 +27,7 @@ $search-margin: ($search-font-size - 10px) / 2;
 }
 
 .search-results {
+  background: $background-color;
   position: absolute;
   right: 0;
   text-align: left;
@@ -42,7 +43,6 @@ $search-margin: ($search-font-size - 10px) / 2;
 
   .search-result-item {
     color: darken($grey, 15%) !important;
-    background-color: $background-color;
     border-left: 4px solid $background-color;
     transition: background 1s ease-out;
 
