@@ -27,7 +27,6 @@ $search-margin: ($search-font-size - 10px) / 2;
 }
 
 .search-results {
-  background: $background-color;
   position: absolute;
   right: 0;
   text-align: left;
@@ -36,6 +35,7 @@ $search-margin: ($search-font-size - 10px) / 2;
   min-height: 50vh;
   font-size: 1.2em;
   &:not(:empty) {
+    background: $background-color;
     -webkit-box-shadow: 12px 6px 36px -15px rgba(0, 0, 0, 0.48);
     -moz-box-shadow: 12px 6px 36px -15px rgba(0, 0, 0, 0.48);
     box-shadow: 12px 6px 36px -15px rgba(0, 0, 0, 0.48);
